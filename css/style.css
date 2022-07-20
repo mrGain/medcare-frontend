@@ -27,6 +27,22 @@ html{
 section{
     padding:2rem 9%;
 }
+section:nth-child(even){
+    background: #f5f5f5;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+    letter-spacing: .4rem;
+}
+.heading span{
+    text-transform: uppercase;
+    color: var(--green);
+}
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -52,16 +68,23 @@ section{
     background: var(--green);
     color: #fff;
 }
+.btn:hover span{
+    background: #fff;
+    color: var(--green);
+}
 
 .header{
-    padding: 2rem 9%;
-    position : fixed;
-    top: 0; left: 0; right: 0;
+    padding:2rem 9%;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #fff;
 }
+
 .header .logo{
     font-size: 2.5rem;
     color:var(--black);
@@ -92,6 +115,7 @@ section{
     flex-wrap: wrap;
     gap: 1.5rem;
     padding-top: 10rem;
+    z-index: 80;
 }
 .home .image{
     flex:1 1 45rem; /* flex-basis */
@@ -116,9 +140,66 @@ section{
     padding: 1rem 0;
 }
 
+.icons-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.icons-container .icons{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+.icons-container .icons i{
+    font-size: 4.5rem;
+    color:var(--green);
+    padding-bottom: .7rem;
+}
+.icons-container .icons h3{
+    font-size: 4.5rem;
+    color: var(--black);
+    padding: .5rem 0;
+    text-shadow: var(--text-shadow);
+}
+.icons-container .icons p{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    padding: .5rem 0;
+}
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
 
-
-
+.services .box-container .box{
+    background: #fff;
+    border-radius: .5rem;
+    /* box-shadow: var(--box-shadow); */
+    padding: 2.5rem;
+}
+.services .box-container .box:hover{
+    box-shadow: var(--box-shadow);
+}
+.services .box-container .box i{
+    color: var(--green);
+    font-size: 5rem;
+}
+.services .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.services .box-container .box p{
+    font-size: 1.2rem;
+    line-height: 2;
+    color: var(--light-color);
+    padding-bottom: .5rem;
+}
 
 
 
@@ -131,6 +212,9 @@ section{
     }
     .header{
         padding:2rem;
+    }
+    section{
+        padding: 2rem;
     }
 }
 
