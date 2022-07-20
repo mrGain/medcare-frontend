@@ -229,6 +229,114 @@ section:nth-child(even){
     padding-bottom: .5rem;
 }
 
+.doctors .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+.doctors .box-container .box{
+    text-align: center;
+    background: rgb(240, 240, 240);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+}
+.doctors .box-container .box:hover{
+    background: #fff;
+}
+.doctors .box-container .box img{
+    height: 20rem;
+    border: var(--border);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.doctors .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+.doctors .box-container .box span{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+.doctors .box-container .box .share{
+    padding-top: 2rem;
+}
+.doctors .box-container .box .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: var(--green);
+    border-radius: 50%;
+    border: var(--border);
+    margin: .3rem;
+}
+.doctors .box-container .box .share a:hover{
+    background: var(--green);
+    color: #fff;
+}
+
+.bookings .booking-form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.bookings .booking-form .image{
+    flex: 1 1 45rem; /* flex-basis */
+}
+.bookings .booking-form .image img{
+    width: 100%;
+}
+.bookings .booking-form form{
+    flex: 1 1 45rem; /* flex-basis */
+    background: #fff;
+    border:.3rem solid aliceblue;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+.bookings .booking-form form h3{
+    color: var(--black);
+    font-size: 2rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+}
+.bookings .booking-form form .form-group{
+    padding: .2rem 0;
+}
+.bookings .booking-form form .form-group .form-control{
+    width: 90%;
+    margin: 0 .7rem;
+    border: .2rem solid aliceblue;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-transform: none;
+    padding: 1rem;
+}
+.bookings .booking-form form .form-group label{
+    color: var(--black);
+    font-size: 1.5rem;
+}
+.bookings .booking-form .btn{
+    width: 90%;
+    margin: .5rem .7rem;
+    box-shadow: none;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
