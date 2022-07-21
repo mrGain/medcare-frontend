@@ -331,6 +331,56 @@ section:nth-child(even){
     font-size: 1.5rem;
     cursor: pointer;
 }
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+.review .box-container .box{
+    text-align: center;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.review .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review .box-container .box h3{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+.review .box-container .box .stars{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.review .box-container .box .text{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding-top: 4rem;
+}
+.review .box-container .box::before{
+    content:"";
+    position: absolute;
+    top:-4rem;
+    left:50%;
+    transform: translateX(-50%);
+    background: var(--green);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 25rem;
+    width:120%;
+    z-index: -1;
+}
+
 
 
 
